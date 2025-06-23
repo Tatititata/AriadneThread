@@ -185,11 +185,4 @@ This command removes the binaries from the installation directory and deletes th
 Нажмите секретную кнопку между Rows и Columns и создайте тепловую карту лабиринта. /\
 Push the secret button between Rows and Columns and draw a heatmap of the maze.
 
-<video width="480" height="480" controls>
-  <source src="maze.mp4" type="video/mp4">
-  Ваш браузер не поддерживает видео.
-</video>
-
-
-
-
+[Video](maze.mp4)
