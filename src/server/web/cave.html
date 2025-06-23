@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cave</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header-controls">
+    <h1 class="title">Generate and solve cave</h1>
+    <div class="controls">
+      <input type="number" id="rows" value="10" min="1" max="50">
+      <input type="number" id="cols" value="10" min="1" max="50">
+      <button id="generateMaze">Generate</button>
+      <br>
+      <strong>Birth:</strong>
+      <input type="number" id="birth" value="4" min="0" max="7">
+      <strong>Death:</strong>
+      <input type="number" id="death" value="3" min="0" max="7">
+      <strong>Chance:</strong>
+      <input type="number" id="chance" value="0.45" min="0" max="1" step="0.01">
+      <br>
+      <button id="solveMaze">Solve cave</button>
+      <strong>Delay (ms):</strong>
+      <input type="number" id="delayMs" value="200" min="0" max="500">
+      <button id="nextStep">Next step</button>
+    </div>
+  </div>
+  <canvas id="mazeCanvas" width="800" height="600"></canvas>
+  <script src="js/cave.js"></script>
+</body>
+</html>

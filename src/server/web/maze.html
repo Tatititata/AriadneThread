@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maze</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header-controls">
+    <h1 class="title">Generate and solve maze</h1>
+        <input type="file" id="fileInput" accept=".txt" style="display:none" />
+        <button id="Load">Load maze</button>
+        <button id="Save">Save maze</button>
+  </div>
+  <div class="controls">
+      <input type="number" id="rows" value="20" min="1" max="50">
+      <input type="number" id="cols" value="30" min="1" max="50">
+      <button id="generateMaze">Generate</button>
+      <strong>Start:</strong>
+      <input type="number" id="startRow" value="1" min="1" max="50" placeholder="row">
+      <input type="number" id="startCol" value="1" min="1" max="50" placeholder="column">
+      <strong>End:</strong>
+      <input type="number" id="endRow" value="1" min="1" max="50" placeholder="row">
+      <input type="number" id="endCol" value="1" min="1" max="50" placeholder="column">
+      <button id="solveMaze">Solve maze</button>
+  </div>
+
+  <canvas id="mazeCanvas" width="800" height="600"></canvas>
+  <script src="js/maze.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="200" height="200" fill="#0A0A0A"></rect>
+
+  <!-- Лабиринт -->
+  <path d="M10 10 H190 V190 H10 V10
+           M10 50 H150
+           M50 10 V150
+           M90 50 H190
+           M90 50 V190
+           M50 90 H150
+           M150 90 V190" stroke="#00FFC6" stroke-width="4" fill="none" filter="url(#glow)"></path>
+
+  <!-- Игрок -->
+  <circle cx="30" cy="30" r="6" fill="#FFD700" filter="url(#glow)"></circle>
+
+  <!-- Цель — флаг -->
+  <path d="M170 30 L185 25 L185 35 Z" fill="#FF5555" filter="url(#glow)"></path>
+  <line x1="170" y1="30" x2="170" y2="50" stroke="#FF5555" stroke-width="2"></line>
+
+  <!-- Путь -->
+  <path d="M30 30 C60 70, 100 70, 130 110 S170 130, 170 50" stroke="#8888FF" stroke-width="3" fill="none" stroke-dasharray="6,4" filter="url(#glow)"></path>
+</svg>
